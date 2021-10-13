@@ -1,17 +1,19 @@
 import * as React from 'react';
-import { Container, Typography } from '@material-ui/core';
 import Grid from '@mui/material/Grid';
+import { Typography } from '@material-ui/core';
+import Apps from './Componentes';
+import { Box } from '@mui/system';
+
 function App() {
   return (
-    <Grid>
-       <Grid container>
-          <Grid item  alignItems="center">
+    <Box ml={3} m ={8} >
+      <Box  sx={{marginLeft:'35%'}} >
            <Typography variant="h3" >
               Faça seu cadastro
             </Typography>
-          </Grid>
-      </Grid>
-    </Grid>
+        </Box>
+            <Apps/>
+    </Box>
   )
 }
 
